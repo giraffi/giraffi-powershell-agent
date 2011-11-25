@@ -86,7 +86,7 @@ for ( $i = 0; $i -lt 20; $i++ )
 }
 
 $load_average = [math]::round(($c_load / 20),2)
-post2Giraffi load_avelage $load_average
+post2Giraffi load_average $load_average
 
 
 
