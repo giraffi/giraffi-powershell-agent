@@ -5,6 +5,7 @@ rem ##  - Change powershell execution-policy to remotesigned.
 rem ##  - Create directory for agent "c:\opt\agent"
 rem ##  - Copy powershell scripts to "c:\opt\agent"
 rem ##    - for example, call powershell script to build agent.ps1 insted of copy.
+rem ##  - Input apikey string from STDIN.
 rem ##  - Create a new scheduled task for run agent every 5 minutes.
 
 setlocal
@@ -25,6 +26,10 @@ IF NOT EXIST %AgentDirPath% mkdir %AgentDirPath%
 rem # Copy or build script.
 rem powershell build_agent.ps1
 copy .\agent.ps1 %AgentDirPath% /Y
+
+rem ## put apikey.
+set /P APIKEY="Please paste GIRAFFI_APIKEY here > "
+echo %APIKEY%>%AgentDirPath%apikey.txt
 
 rem ## add task.
 set TaskName=\Giraffi\Giraffi-Powershell-Agent

@@ -25,6 +25,16 @@ $g_apikey     = ($(Get-Content  "$agent_dir$apikey_file") -replace "`r`n",'')
 $customkey = $mac_address
 # $customkey = "windows"
 
+## set ck_init
+if (Test-Path "$agent_dir$ck_file" -Pathtype Leaf)
+{}
+else
+{
+  Set-Content -path "$agent_dir$ck_file" -value $mac_address
+}
+
+$ck_init     = ($(Get-Content  "$agent_dir$ck_file") -replace "`r`n",'')
+
 
 ## post function
 function post2Giraffi {
@@ -48,7 +58,7 @@ function post2Giraffi {
       ""servicetype"":""$s_type"",
       ""value"":$s_value,
       ""customkey"":""$customkey"",
-      ""ck_init"":""$customkey"",
+      ""ck_init"":""$ck_init"",
       ""tags"":[""$ip_address"",""$mac_address"",""$hostname""],
       ""checked_at"":""$utime""
     }
@@ -64,6 +74,20 @@ function post2Giraffi {
 ## post memory used
 $mem_used = $(Get-WmiObject -Class Win32_PerfFormattedData_PerfOS_Memory).PercentCommittedBytesInUse
 post2Giraffi mem_used $mem_used
+
+
+## post cpu load_average
+# create load_average 1min. get sample every 3sec 20 times.
+$c_load = 0
+for ( $i = 0; $i -lt 20; $i++ )
+{
+  $c_load = $c_load + $(Get-WmiObject Win32_PerfFormattedData_PerfOS_System).ProcessorQueueLength
+  sleep 3
+}
+
+$load_average = [math]::round(($c_load / 20),2)
+post2Giraffi load_avelage $load_average
+
 
 
 
