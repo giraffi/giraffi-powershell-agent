@@ -1,0 +1,1 @@
+  [Diagnostics.EventLog]::WriteEntry("Giraffi Agent", "test ok", "Warning", 0)
