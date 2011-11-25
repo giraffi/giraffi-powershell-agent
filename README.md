@@ -1,7 +1,7 @@
 GIraffi-Powershell-Agent
 ===
 Giraffi internal agent for WindowsServer.This is a sample script.  
-The agent put to giraffi memoryusage and CPU loadaverage.
+The agent put to giraffi memoryusage and CPU loadaverage every 5 minutes.
 
 Requirements
 --
