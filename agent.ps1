@@ -54,7 +54,7 @@ function post2Giraffi {
     }
   }"
 
-  $data
+  # $data
   $wr = $wc.UploadString($g_uri, $data)
 
   $wc.Quit    
