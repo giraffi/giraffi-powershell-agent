@@ -1,6 +1,9 @@
 ## giraffi agent script
 # [Diagnostics.EventLog]::WriteEntry("Giraffi Agent", "test ok", "Warning", 0)
 
+## sleep 0-30 seconds 
+Start-Sleep -Milliseconds $(Get-Random -maximum 30000)
+
 # constant
 function addConst {
   Set-Variable $args[0] $args[1] -Option Constant -Scope script
