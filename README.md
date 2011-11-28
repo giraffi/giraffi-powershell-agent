@@ -5,8 +5,8 @@ A resource monitoring agent for Windows Server
 The agent installed in your server environment can collect and post data (memory usage and CPU load average)  
 to the specific Giraffi API over SSL.  
 
-The agent is designed to work with the `Windows Task Scheduler` so you can set up the agent to run  
-whenever you like (once a day, every 5 minutes, etc.).  
+The agent is designed to work with the `Windows Task Scheduler` so you can set up the agent to run whenever  
+you like (once a day, every 5 minutes, etc.).  
 
 The agent is a `Windows PowerShell` script. You’re free to examine and change its source code.
 
