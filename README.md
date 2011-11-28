@@ -22,7 +22,7 @@ Installation
 2. Extract the zip file.
 3. Execute `install.bat` to open a command prompt.
 4. Enter your Giraffi APIKEY and RETURN at the command prompt.
-5. It enable you to insert the APIKEY into the file `C:\opt\agent\apikey.txt` and schedule the launch of `C:\opt\agent\agent.ps1` with Task Scheduler. The default setting is `should run every 5 minutes`.
+5. It enable you to insert the APIKEY into the file `C:\opt\agent\apikey.txt` and schedule the launch of `C:\opt\agent\agent.ps1` with Task Scheduler. The default setting is to enable an agent to run every 5 minutes.
 
 Notes
 ---
