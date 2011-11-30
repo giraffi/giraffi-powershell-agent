@@ -27,4 +27,4 @@ Installation
 Notes
 ---
 * The agent records an error in the `Event Log`.
-* The default `Custom Key` value is a `MAC Address` dynamically detected from the NIC having the default gateway.
+* The default `Custom Key` value is a `MAC Address` dynamically detected from the NIC used as the default gateway .
