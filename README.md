@@ -28,3 +28,7 @@ Notes
 ---
 * The agent records an error in the `Event Log`.
 * The default `Custom Key` value is a `MAC Address` dynamically detected from the NIC used as the default gateway .
+
+Sample Image
+---
+![Installer](https://github.com/giraffi/giraffi-powershell-agent/raw/master/img_install.png)
