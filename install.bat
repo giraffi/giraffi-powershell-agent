@@ -49,7 +49,7 @@ schtasks /create /tn "%TaskName%" /tr "%Task%" /sc %Schedule% /ri %RI% /st %ST% 
 
 echo.
 echo ############################
-echo Thank you for using girafi.
+echo Thank you for using giraffi.
 echo   Agent install finished.
 echo ############################
 echo.
