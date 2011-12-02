@@ -3,13 +3,13 @@
 # Wellcome to Giraffi-powershell-agent installer.
 #   https://github.com/giraffi/giraffi-powershell-agent
 #
-#       .-",
-#       `~||
-#         ||
-#         ||___
-#         (':.)`
-#         || ||
-#         || ||
-#         ^^ ^^
+#       .-",        .-",       .-",       .-",
+#       `~||        `~||       `~||       `~||
+#         ||          ||         ||         ||
+#         ||___       ||___      ||___      ||___
+#         (':.)`      (':.)`     (':.)`     (':.)`
+#         || ||       || ||      || ||      || ||
+#         || ||       || ||      || ||      || ||
+#         ^^ ^^       ^^ ^^      ^^ ^^      ^^ ^^
 #   Giraffi, Il offre sa confiance et son amour.
 #
