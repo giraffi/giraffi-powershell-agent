@@ -32,3 +32,7 @@ Notes
 Sample Image
 ---
 ![Installer](https://github.com/giraffi/giraffi-powershell-agent/raw/master/img_install.png)
+
+License
+---
+Copyright © 2011 Firstserver,Inc. Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
